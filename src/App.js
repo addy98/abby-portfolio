@@ -1,5 +1,3 @@
-import './assets/styles/App.scss';
-import './assets/styles/main.scss';
 import Nav from './components/Nav'
 
 function App() {

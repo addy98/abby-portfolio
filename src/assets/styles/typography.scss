@@ -1,0 +1,68 @@
+// FONTS
+
+@import url("https://use.typekit.net/bvm5ave.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@mixin avant-garde-gothic-pro {
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    font-weight: 300;
+}
+
+@mixin avant-garde-gothic-pro-medium {
+    font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+    font-weight: 500;
+}
+
+@mixin inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+
+// TYPOGRAPHY CLASSES
+
+h1, .h1 {
+    font-size: 80px;
+    line-height: 92px;
+    @include avant-garde-gothic-pro();
+    @include breakpoint('mobile') {
+        font-size: 64px;
+        line-height: 74px;
+    }
+}
+
+h2, .h2 {
+    font-size: 40px;
+    line-height: 46px;
+    @include avant-garde-gothic-pro();
+}
+
+h3, .h3 {
+    font-size: 28px;
+    line-height: 33px;
+    @include avant-garde-gothic-pro();
+}
+
+h4, .h4 {
+    font-size: 20px;
+    line-height: 23px;
+    @include avant-garde-gothic-pro-medium();
+}
+
+.quote-text {
+    font-size: 18px;
+    line-height: 27px;
+    @include inter-regular();
+}
+
+.body-text {
+    font-size: 16px;
+    line-height: 24px;
+    @include inter-regular();
+}
+
+.small-text {
+    font-size: 16px;
+    line-height: 21px;
+    @include inter-regular();
+}
