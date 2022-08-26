@@ -44,3 +44,27 @@ $breakpoints: (
 .bg-white {
     background-color: variables.$white;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-end {
+    justify-content: end;
+}
+
+.mx-64-32 {
+    margin: 64px 0 32px;
+}
+
+.mr-64 {
+    margin-right: 64px;
+}
+
+.mb-54 {
+    margin-bottom: 54px;
+}

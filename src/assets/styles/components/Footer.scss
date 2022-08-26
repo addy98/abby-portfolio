@@ -1,0 +1,40 @@
+@use '../variables.scss';
+
+.footer {
+    padding: 44px 0 48px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.25s;
+    &:hover {
+        color: variables.$blue;
+    }
+}
+
+.addison {
+    color: variables.$pretty-pink;
+    text-decoration: underline;
+}
+
+.linkedin-logo {
+    background-image: url('../../images/logos/LinkedinLogo.png');
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-size: contain;
+    margin-left: 14px;
+    position: relative;
+    bottom: 3px;
+}
+
+.linkedin-logo-inverted {
+    background-image: url('../../images/logos/LinkedinLogoInverted.png');
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-size: contain;
+    margin-left: 14px;
+    position: relative;
+    bottom: 3px;
+}

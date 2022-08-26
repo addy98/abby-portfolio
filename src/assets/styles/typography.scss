@@ -49,20 +49,46 @@ h4, .h4 {
     @include avant-garde-gothic-pro-medium();
 }
 
+h5, .h5 {
+    font-size: 16px;
+    line-height: 18px;
+    @include avant-garde-gothic-pro-medium();
+}
+
 .quote-text {
     font-size: 18px;
     line-height: 27px;
     @include inter-regular();
 }
 
-.body-text {
+.paragraph-large-bold {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    @include inter-regular();
+}
+
+.inter-large {
+    font-size: 18px;
+    line-height: 27px;
+    @include inter-regular();
+}
+
+.inter-paragraph {
     font-size: 16px;
     line-height: 24px;
     @include inter-regular();
 }
 
-.small-text {
-    font-size: 16px;
+.inter-small {
+    font-size: 14px;
     line-height: 21px;
+    @include inter-regular();
+}
+
+.eyebrow-text {
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: 600;
     @include inter-regular();
 }

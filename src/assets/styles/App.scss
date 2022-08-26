@@ -1,5 +1,5 @@
 @use 'variables';
-@use 'helpers-mixins';
+@use 'helpers';
 .App-header {
   background-color: variables.$pretty-pink;
   min-height: 100vh;
@@ -9,7 +9,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  @include helpers-mixins.breakpoint(mobile) {
+  @include helpers.breakpoint(mobile) {
     color: black;
   }
 }

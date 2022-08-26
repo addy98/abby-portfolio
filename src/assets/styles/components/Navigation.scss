@@ -1,0 +1,56 @@
+@use '../variables.scss';
+
+.brand {
+    margin-right: 80px;
+    &:hover {
+        color: variables.$pretty-pink;
+    }
+}
+
+.navigation-link {
+    // from https://www.30secondsofcode.org/css/s/hover-underline-animation
+    margin-right: 80px;
+    display: inline-block;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 10%;
+        background-color: variables.$pretty-pink;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+.dark-mode {
+    background-image: url('../../images/logos/dark-mode.png');
+    height: 24px;
+    width: 42px;
+    background-position: center;
+    background-size: contain;
+    margin-left: 14px;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+
+.dark-mode-off {
+    background-image: url('../../images/logos/dark-mode-off.png');
+    height: 24px;
+    width: 42px;
+    background-position: center;
+    background-size: contain;
+    margin-left: 14px;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}

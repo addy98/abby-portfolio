@@ -1,10 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
-@import "./helpers-mixins.scss";
-@import "./typography.scss";
-@import "./variables.scss";
+@import "./helpers";
+@import "./typography";
+@import "./variables";
 
-@import "./App.scss";
+@import "./App";
 
 // Components
-@import "./components/Nav.scss";
+@import "./components/Navigation";
+@import "./components/Footer";
+@import "./components/ProjectHero";
