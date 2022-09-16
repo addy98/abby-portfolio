@@ -57,8 +57,20 @@ $breakpoints: (
     justify-content: end;
 }
 
-.mx-64-32 {
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.my-64-32 {
     margin: 64px 0 32px;
+}
+
+.py-72-48 {
+    padding: 72px 0 48px;
 }
 
 .mr-64 {
@@ -71,4 +83,16 @@ $breakpoints: (
 
 .mb-54 {
     margin-bottom: 54px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-28 {
+    margin-top: 28px;
 }

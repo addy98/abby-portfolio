@@ -6,14 +6,6 @@
     padding-top: 32px;
 }
 
-.arrow-logo {
-    height: 48px;
-    width: 48px;
-    background: url('../../images/logos/arrow.png');
-    background-size: contain;
-    background-position: center;
-}
-
 // dynamically applied classes for images on project pages
 
 @mixin image-styles {

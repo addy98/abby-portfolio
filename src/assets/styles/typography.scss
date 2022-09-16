@@ -1,5 +1,7 @@
 // FONTS
 
+@use 'variables';
+
 @import url("https://use.typekit.net/bvm5ave.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -91,4 +93,8 @@ h5, .h5 {
     line-height: 28px;
     font-weight: 600;
     @include inter-regular();
+}
+
+.heels {
+    background-color: variables.$blue;
 }

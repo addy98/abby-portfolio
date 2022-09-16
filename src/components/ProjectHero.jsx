@@ -1,5 +1,6 @@
 import { Row, Col, Container } from 'react-bootstrap'
 import React from 'react'
+import ArrowLogo from './ArrowLogo'
 
 class ProjectHero extends React.Component {
 
@@ -22,7 +23,7 @@ class ProjectHero extends React.Component {
                                 <span className='flex flex-justify-end'>
                                     <div className='h2'>{page['title-2']}</div>
                                 </span>
-                                <div className='inter-large mx-64-32'>
+                                <div className='inter-large my-64-32'>
                                     {page['description']}
                                 </div>
                                 <div className='flex mb-54'>
@@ -35,7 +36,7 @@ class ProjectHero extends React.Component {
                                         <div className='h4'>{page['timeframe']}</div>
                                     </div>
                                 </div>
-                                <div className='arrow-logo'></div>
+                                <ArrowLogo />
                             </div>
                         </Col>
                         <Col sm={{span: 7, offset: 1}}>
