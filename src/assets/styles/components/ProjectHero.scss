@@ -1,36 +1,40 @@
 .project-hero {
-    padding: 48px 0 154px;
-}
+    
+    .py-48-154 {
+        padding: 48px 0 154px;
+    }
 
-.copy {
-    padding-top: 32px;
-}
-
-// dynamically applied classes for images on project pages
-
-@mixin image-styles {
-    width: 708px;
-    height: 533px;
-    border-radius: 4px;
-}
-
-.mms {
-    @include image-styles();
-    background-image: url('../../images/heroes/laptop-2.jpg');
-}
-.coverage {
-    @include image-styles();
-    background-image: url('../../images/heroes/laptop-2.jpg');
-}
-.bankrate {
-    @include image-styles();
-    background-image: url('../../images/heroes/laptop-2.jpg');
-}
-.wsj {
-    @include image-styles();
-    background-image: url('../../images/heroes/laptop-2.jpg');
-}
-.cnet {
-    @include image-styles();
-    background-image: url('../../images/heroes/laptop-2.jpg');
+    .copy {
+        padding-top: 32px;
+    }
+    
+    // dynamically applied classes for images on project pages
+    
+    @mixin image-styles {
+        width: 708px;
+        height: 533px;
+        border-radius: 4px;
+    }
+    
+    .mms {
+        @include image-styles();
+        background-image: url('../../images/heroes/laptop-2.jpg');
+    }
+    .coverage {
+        @include image-styles();
+        background-image: url('../../images/heroes/laptop-2.jpg');
+    }
+    .bankrate {
+        @include image-styles();
+        background-image: url('../../images/heroes/laptop-2.jpg');
+    }
+    .wsj {
+        @include image-styles();
+        background-image: url('../../images/heroes/laptop-2.jpg');
+    }
+    .cnet {
+        @include image-styles();
+        background-image: url('../../images/heroes/laptop-2.jpg');
+    }
+    
 }

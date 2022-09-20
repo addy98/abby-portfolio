@@ -4,8 +4,6 @@
 @import "./typography";
 @import "./variables";
 
-@import "./App";
-
 // Components
 @import "./components/Navigation";
 @import "./components/Footer";
@@ -14,3 +12,4 @@
 
 //Pages
 @import "./pages/Home";
+@import "./pages/ProjectPage.scss";

@@ -12,6 +12,7 @@ class Home extends React.Component {
     loadPage(page) {
         const pages = projects
         this.setState({page: pages[page]['page']})
+        console.log(pages[page]['page'] + ' page loaded')
     }
 
     retainOpacity() {
