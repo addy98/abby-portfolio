@@ -1,19 +1,9 @@
 import React from 'react'
 import { Container, Button, Row, Col } from 'react-bootstrap'
-import projects from '../data/pages.json'
 import ArrowLogo from '../components/ArrowLogo'
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
-
-    state = {
-        page: 'home'
-    }
-
-    loadPage(page) {
-        const pages = projects
-        this.setState({page: pages[page]['page']})
-        console.log(pages[page]['page'] + ' page loaded')
-    }
 
     retainOpacity() {
         document.getElementById('hero-subtitle').style.opacity = 1;
@@ -131,19 +121,19 @@ class Home extends React.Component {
                         </Row>
                         <Row className='mt-32'>
                             <Col sm={{offset: 1}}>
-                                <Button onClick={() => this.loadPage(0)}>mms</Button>
+                                <Link to="/mms"><Button>mms</Button></Link>
                             </Col>
                             <Col>
-                                <Button onClick={() => this.loadPage(1)}>coverage</Button>
+                                <Link to="/coverage"><Button>coverage</Button></Link>
                             </Col>
                             <Col>
-                                <Button onClick={() => this.loadPage(2)}>bankrate</Button>
+                                <Link to="/bankrate"><Button>bankrate</Button></Link>
                             </Col>
                             <Col>
-                                <Button onClick={() => this.loadPage(3)}>wsj</Button>
+                                <Link to="/wsj"><Button>wsj</Button></Link>
                             </Col>
                             <Col>
-                                <Button onClick={() => this.loadPage(4)}>cnet</Button>
+                                <Link to="/cnet"><Button>cnet</Button></Link>
                             </Col>
                         </Row>
                     </Container>
