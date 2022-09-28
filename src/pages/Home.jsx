@@ -17,6 +17,14 @@ class Home extends React.Component {
         document.getElementById('hero-designer-red').style.width = "20%";
     }
 
+    retainProductPosition() {
+        document.getElementById('product-header-scroll-txt').style.transform = "translateY(0)";
+    }
+
+    retainDesignerPosition() {
+        document.getElementById('designer-header-scroll-txt').style.transform = "translateY(0)";
+    }
+
     render() {
         return (
             <div className='home'>
@@ -24,9 +32,12 @@ class Home extends React.Component {
                     <div className='py-72-48'>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
-                                <Row className='hero-title-top hero-animation-product'>
+                                <Row className='hero-animation-product mb-32'>
                                     <div className='wrap'>
-                                        <div className='flex mb-32' id='top-header-scroll-txt'>
+                                        <div 
+                                        className='flex' 
+                                        id='product-header-scroll-txt'
+                                        onAnimationEnd={this.retainProductPosition}>
                                             <span className='p'></span>
                                             <span className='r'></span>
                                             <span className='o'></span>
@@ -36,7 +47,6 @@ class Home extends React.Component {
                                             <span className='t'></span>
                                         </div>
                                     </div>
-                                    
                                 </Row>
                             </Container>
                             <Container fluid className='hero-line-position'>
@@ -49,9 +59,11 @@ class Home extends React.Component {
                         </div>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
-                                <Row className='hero-title-bottom hero-animation-designer'>
+                                <Row className='hero-animation-designer'>
                                     <div className='wrap'>
-                                        <div className='flex flex-justify-end mb-32' id='bottom-header-scroll-txt'>
+                                        <div className='flex flex-justify-end' 
+                                        id='designer-header-scroll-txt' 
+                                        onAnimationEnd={this.retainDesignerPosition}>
                                             <span className='d'></span>
                                             <span className='e'></span>
                                             <span className='s'></span>

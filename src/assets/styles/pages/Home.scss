@@ -4,35 +4,17 @@
 
     // animations
 
-    @keyframes slideInLeft {
+    @keyframes growFromRight {
         0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-    }
-
-    @keyframes slideInRight {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-    }
-
-    @keyframes slideOutRight {
-        0% {
-            width: 100%;
+            width: 0%;
         }
         100% {
             width: 20%;
         }
     }
-    @keyframes slideOutLeft {
+    @keyframes growFromLeft {
         0% {
-            width: 100%;
+            width: 0%;
         }
         100% {
             width: 20%;
@@ -50,27 +32,19 @@
 
     // normal classes
 
-    .hero-title-top {
-        animation: 2s ease 0s 1 slideInLeft;
-    }
-
-    .hero-title-bottom {
-        animation: 2s ease 0s 1 slideInRight;
-    }
-
     @mixin red-line {
         height: 4px;
-        width: 100%;
+        width: 0;
         background-color: variables.$pretty-pink;
     }
 
     .hero-product-red {
         @include red-line();
-        animation: 1s ease 1.5s 1 slideOutRight;
+        animation: 1s ease 1.5s 1 growFromRight;
     }
     .hero-designer-red {
         @include red-line();
-        animation: 1s ease 1.5s 1 slideOutLeft;
+        animation: 1s ease 1.5s 1 growFromLeft;
     }
 
     .hero-line-position {
