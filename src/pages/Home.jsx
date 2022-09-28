@@ -24,16 +24,19 @@ class Home extends React.Component {
                     <div className='py-72-48'>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
-                                <Row className='hero-title-top'>
-                                    <div className='flex mb-32'>
-                                        <div className='p'></div>
-                                        <div className='r'></div>
-                                        <div className='o'></div>
-                                        <div className='d'></div>
-                                        <div className='u'></div>
-                                        <div className='c'></div>
-                                        <div className='t'></div>
+                                <Row className='hero-title-top hero-animation-product'>
+                                    <div className='wrap'>
+                                        <div className='flex mb-32' id='top-header-scroll-txt'>
+                                            <span className='p'></span>
+                                            <span className='r'></span>
+                                            <span className='o'></span>
+                                            <span className='d'></span>
+                                            <span className='u'></span>
+                                            <span className='c'></span>
+                                            <span className='t'></span>
+                                        </div>
                                     </div>
+                                    
                                 </Row>
                             </Container>
                             <Container fluid className='hero-line-position'>
@@ -46,16 +49,18 @@ class Home extends React.Component {
                         </div>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
-                                <Row className='hero-title-bottom'>
-                                    <div className='flex flex-justify-end mb-32'>
-                                        <div className='d'></div>
-                                        <div className='e'></div>
-                                        <div className='s'></div>
-                                        <div className='i'></div>
-                                        <div className='g'></div>
-                                        <div className='n'></div>
-                                        <div className='e'></div>
-                                        <div className='r'></div>
+                                <Row className='hero-title-bottom hero-animation-designer'>
+                                    <div className='wrap'>
+                                        <div className='flex flex-justify-end mb-32' id='bottom-header-scroll-txt'>
+                                            <span className='d'></span>
+                                            <span className='e'></span>
+                                            <span className='s'></span>
+                                            <span className='i'></span>
+                                            <span className='g'></span>
+                                            <span className='n'></span>
+                                            <span className='e'></span>
+                                            <span className='r'></span>
+                                        </div>
                                     </div>
                                 </Row>
                             </Container>

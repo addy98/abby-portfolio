@@ -1,0 +1,111 @@
+.hero-animation-designer {
+  .wrap {
+    overflow:hidden;
+  }
+  
+  #bottom-header-scroll-txt {
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  #bottom-header-scroll-txt span {
+    float: left;
+  }
+  
+  @-webkit-keyframes a {
+    0% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  
+    60% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  
+    80% {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    80.01% {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+  @keyframes a {
+    0% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  
+    60% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  
+    80% {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    80.01% {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+  #bottom-header-scroll-txt span:first-child {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite;
+  }
+  
+  #bottom-header-scroll-txt span:nth-child(2) {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 24ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 24ms;
+  }
+  
+  #bottom-header-scroll-txt span:nth-child(3) {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 48ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 48ms;
+  }
+  
+  #bottom-header-scroll-txt span:nth-child(4) {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 72ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 72ms;
+  }
+  
+  #bottom-header-scroll-txt span:nth-child(5) {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 96ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 96ms;
+  }
+
+  #bottom-header-scroll-txt span:nth-child(6) {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 120ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 120ms;
+  }
+
+  #bottom-header-scroll-txt span:nth-child(7) {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 144ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 144ms;
+  }
+  
+  #bottom-header-scroll-txt span:last-child {
+    -webkit-animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 168ms;
+    animation: a 4s cubic-bezier(.77, 0, .175, 1) infinite 168ms;
+  }
+  
+}
