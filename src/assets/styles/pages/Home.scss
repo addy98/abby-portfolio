@@ -40,11 +40,11 @@
 
     .hero-product-red {
         @include red-line();
-        animation: 1s ease 1.5s 1 growFromRight;
+        animation: 1s ease 1s 1 growFromRight;
     }
     .hero-designer-red {
         @include red-line();
-        animation: 1s ease 1.5s 1 growFromLeft;
+        animation: 1s ease 1s 1 growFromLeft;
     }
 
     .hero-line-position {
