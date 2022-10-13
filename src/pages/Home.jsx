@@ -87,8 +87,7 @@ class Home extends React.Component {
                     <Container>
                         <h3 
                         id='hero-subtitle'
-                        name='text-theme-toggle' 
-                        className={'hero-subtitle ' + darkMode ? 'text-white' : 'text-black'}
+                        className={'hero-subtitle ' + (darkMode ? 'text-white' : 'text-black')}
                         onAnimationEnd={this.retainOpacity}
                         >
                             Transforming the tools people use everyday, for the better.
@@ -96,7 +95,7 @@ class Home extends React.Component {
                         <div className='flex flex-justify-center home-first-arrow'>
                             <ArrowLogo />
                         </div>
-                        <Row name='text-theme-toggle' className={darkMode ? 'text-white' : 'text-black'}>
+                        <Row className={darkMode ? 'text-white' : 'text-black'}>
                             <Col sm={{span: 6, offset: 1}}>
                                 <h2>Hi, I'm Abby</h2>
                                 <p className='inter-paragraph mt-32'>
@@ -132,7 +131,7 @@ class Home extends React.Component {
                         <div className='flex flex-justify-center home-second-arrow'>
                             <ArrowLogo />
                         </div>
-                        <Row name='text-theme-toggle' className={darkMode ? 'text-white' : 'text-black'}>
+                        <Row className={darkMode ? 'text-white' : 'text-black'}>
                             <Col sm={{offset: 1}}>
                                 <h2>Featured work</h2>
                             </Col>
