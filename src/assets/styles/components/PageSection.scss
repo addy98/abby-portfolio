@@ -1,0 +1,9 @@
+@use "../variables.scss";
+
+.page-section {
+    .red-line {
+        height: 4px;
+        width: 100%;
+        background-color: variables.$pretty-pink;
+    }
+}

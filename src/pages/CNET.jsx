@@ -6,7 +6,7 @@ function CNET() {
   const cnet = 4;
   return (
     <div className="project-page">
-      <ProjectHero page={projects[cnet]}/>
+      <ProjectHero page={projects[cnet]} darkMode={this.props.darkMode}/>
       <ProjectContent page={projects[cnet]}/>
     </div>
   );

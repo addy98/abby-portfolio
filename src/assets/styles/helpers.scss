@@ -53,6 +53,10 @@ $breakpoints: (
     justify-content: space-between;
 }
 
+.flex-justify-start {
+    justify-content: start;
+}
+
 .flex-justify-end {
     justify-content: end;
 }
@@ -95,4 +99,16 @@ $breakpoints: (
 
 .mt-28 {
     margin-top: 28px;
+}
+
+.my-20 {
+    margin: 20px 0 20px;
+}
+
+.my-120-130 {
+    margin: 120px 0 130px;
+}
+
+.m-0 {
+    padding: 0;
 }

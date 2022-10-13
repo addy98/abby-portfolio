@@ -26,13 +26,14 @@ class Home extends React.Component {
     }
 
     render() {
+        const darkMode = this.props.darkMode
         return (
             <div className='home'>
-                <div name='bg-theme-toggle' className='bg-black'>
+                <div name='bg-theme-toggle' className={darkMode ? 'bg-black' : 'bg-white'}>
                     <div className='py-72-48'>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
-                                <Row className='hero-animation-product mb-32'>
+                                <Row className='hero-animation mb-32'>
                                     <div className='wrap'>
                                         <div 
                                         className='flex' 
@@ -49,7 +50,7 @@ class Home extends React.Component {
                                     </div>
                                 </Row>
                             </Container>
-                            <Container fluid className='hero-line-position'>
+                            <Container fluid className='hero-line-position m-0'>
                                 <div className='flex flex-justify-end'>
                                     <div id='hero-product-red' 
                                     className='hero-product-red'
@@ -59,7 +60,7 @@ class Home extends React.Component {
                         </div>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
-                                <Row className='hero-animation-designer'>
+                                <Row className='hero-animation'>
                                     <div className='wrap'>
                                         <div className='flex flex-justify-end' 
                                         id='designer-header-scroll-txt' 
@@ -76,7 +77,7 @@ class Home extends React.Component {
                                     </div>
                                 </Row>
                             </Container>
-                            <Container fluid className='hero-line-position'>
+                            <Container fluid className='hero-line-position m-0'>
                                 <div id='hero-designer-red' 
                                 className='hero-designer-red' 
                                 onAnimationEnd={this.retainDesignerLineWidth}></div>
@@ -87,7 +88,7 @@ class Home extends React.Component {
                         <h3 
                         id='hero-subtitle'
                         name='text-theme-toggle' 
-                        className='text-white hero-subtitle'
+                        className={'hero-subtitle ' + darkMode ? 'text-white' : 'text-black'}
                         onAnimationEnd={this.retainOpacity}
                         >
                             Transforming the tools people use everyday, for the better.
@@ -95,7 +96,7 @@ class Home extends React.Component {
                         <div className='flex flex-justify-center home-first-arrow'>
                             <ArrowLogo />
                         </div>
-                        <Row name='text-theme-toggle' className='text-white'>
+                        <Row name='text-theme-toggle' className={darkMode ? 'text-white' : 'text-black'}>
                             <Col sm={{span: 6, offset: 1}}>
                                 <h2>Hi, I'm Abby</h2>
                                 <p className='inter-paragraph mt-32'>
@@ -131,7 +132,7 @@ class Home extends React.Component {
                         <div className='flex flex-justify-center home-second-arrow'>
                             <ArrowLogo />
                         </div>
-                        <Row name='text-theme-toggle' className='text-white'>
+                        <Row name='text-theme-toggle' className={darkMode ? 'text-white' : 'text-black'}>
                             <Col sm={{offset: 1}}>
                                 <h2>Featured work</h2>
                             </Col>

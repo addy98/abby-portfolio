@@ -1,0 +1,128 @@
+.hero-animation {
+
+  // adapted from https://codepen.io/surjithctly/pen/RZmqvm
+
+  .wrap {
+    overflow:hidden;
+  }
+
+  @mixin translateY100 {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  @mixin translateYNeg100 {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  @mixin translateY0 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  #product-header-scroll-txt {
+    @include translateY100();
+  }
+
+  #designer-header-scroll-txt {
+    @include translateY100();
+  }
+  
+  @keyframes a {
+    0% {
+      @include translateY0();
+    }
+  
+    100% {
+      @include translateYNeg100();
+    }
+  }
+
+  @-webkit-keyframes a {
+    0% {
+      @include translateY0();
+    }
+  
+    100% {
+      @include translateYNeg100();
+    }
+  }
+  
+  // PRODUCT letter animations
+  #product-header-scroll-txt span:first-child {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1);
+    animation: a 2s cubic-bezier(.77, 0, .175, 1);
+  }
+  
+  #product-header-scroll-txt span:nth-child(2) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 35ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 30ms;
+  }
+  
+  #product-header-scroll-txt span:nth-child(3) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 70ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 60ms;
+  }
+  
+  #product-header-scroll-txt span:nth-child(4) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 105ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 90ms;
+  }
+  
+  #product-header-scroll-txt span:nth-child(5) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 140ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 120ms;
+  }
+
+  #product-header-scroll-txt span:nth-child(6) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 175ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 150ms;
+  }
+  
+  #product-header-scroll-txt span:last-child {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 210ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 210ms;
+  }
+
+  //DESIGNER letter animations
+  #designer-header-scroll-txt span:first-child {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1);
+    animation: a 2s cubic-bezier(.77, 0, .175, 1);
+  }
+  
+  #designer-header-scroll-txt span:nth-child(2) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 30ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 30ms;
+  }
+  
+  #designer-header-scroll-txt span:nth-child(3) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 60ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 60ms;
+  }
+  
+  #designer-header-scroll-txt span:nth-child(4) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 90ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 90ms;
+  }
+  
+  #designer-header-scroll-txt span:nth-child(5) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 120ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 120ms;
+  }
+
+  #designer-header-scroll-txt span:nth-child(6) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 150ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 150ms;
+  }
+
+  #designer-header-scroll-txt span:nth-child(7) {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 180ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 180ms;
+  }
+  
+  #designer-header-scroll-txt span:last-child {
+    -webkit-animation: a 2s cubic-bezier(.77, 0, .175, 1) 210ms;
+    animation: a 2s cubic-bezier(.77, 0, .175, 1) 210ms;
+  }
+}

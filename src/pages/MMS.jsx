@@ -6,7 +6,7 @@ function MMS() {
   const mms = 0;
   return (
     <div className="project-page">
-      <ProjectHero page={projects[mms]}/>
+      <ProjectHero page={projects[mms]} darkMode={this.props.darkMode}/>
       <ProjectContent page={projects[mms]}/>
     </div>
   );

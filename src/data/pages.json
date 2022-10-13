@@ -6,7 +6,30 @@
         "title-2": "Rebrand",
         "description": "Full-scale rebrand of a Red Ventures aquired travel brand, Million Mile Secrets.",
         "role": "Intern",
-        "timeframe": "8 weeks"
+        "timeframe": "8 weeks",
+        "sections": [
+            {
+                "title": "BACKGROUND"
+            },
+            {
+                "title": "CO-CREATIONS"
+            },
+            {
+                "title": "BRAND PYRAMID"
+            },
+            {
+                "title": "WIREFRAMES"
+            },
+            {
+                "title": "NEW BRAND GUIDE"
+            },
+            {
+                "title": "CLEARED FOR TAKEOFF"
+            },
+            {
+                "title": "CONCLUSION"
+            }
+        ]
     },
     {
         "page": "coverage",
@@ -15,7 +38,30 @@
         "title-2": "Rebrand",
         "description": "Full-scale rebrand of a Red Ventures aquired insurance aggregator, Coverage.",
         "role": "Team designer",
-        "timeframe": "20 weeks"
+        "timeframe": "20 weeks",
+        "sections": [
+            {
+                "title": "BACKGROUND"
+            },
+            {
+                "title": "RESEARCH"
+            },
+            {
+                "title": "SPLIT TESTING"
+            },
+            {
+                "title": "ITERATION"
+            },
+            {
+                "title": "BUILDING THE BRAND"
+            },
+            {
+                "title": "FINAL DESIGNS"
+            },
+            {
+                "title": "CONCLUSION"
+            }
+        ]
     },
     {
         "page": "bankrate",
@@ -24,7 +70,30 @@
         "title-2": "Optimizations",
         "description": "Tooling development and expansion for auto and home insurance under Bankrate.",
         "role": "Lead design",
-        "timeframe": "4 weeks"
+        "timeframe": "4 weeks",
+        "sections": [
+            {
+                "title": "BACKGROUND"
+            },
+            {
+                "title": "RESEARCH"
+            },
+            {
+                "title": "EXPLORATION"
+            },
+            {
+                "title": "TESTING"
+            },
+            {
+                "title": "ITERATION"
+            },
+            {
+                "title": "WHERE WE LANDED"
+            },
+            {
+                "title": "CONCLUSION"
+            }
+        ]
     },
     {
         "page": "wsj",
@@ -33,7 +102,18 @@
         "title-2": "Pitch",
         "description": "Tiger team pitch work focused on acquiring a new partner within financial services.",
         "role": "Co-designer",
-        "timeframe": "4 days"
+        "timeframe": "4 days",
+        "sections": [
+            {
+                "title": "BACKGROUND"
+            },
+            {
+                "title": "PITCH MOCKS"
+            },
+            {
+                "title": "CONCLUSION"
+            }
+        ]
     },
     {
         "page": "cnet",

@@ -6,7 +6,7 @@ function WSJ() {
   const wsj = 3;
   return (
     <div className="project-page">
-      <ProjectHero page={projects[wsj]}/>
+      <ProjectHero page={projects[wsj]} darkMode={this.props.darkMode}/>
       <ProjectContent page={projects[wsj]}/>
     </div>
   );
