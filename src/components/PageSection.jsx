@@ -7,12 +7,13 @@ class PageSection extends React.Component {
         return (
             <div className="page-section my-20">
                 <Container fluid className="pl-0">
-                    <Row className="mb-32 flex flex-align-center">
+                    <Row className="flex">
                         <Col sm='2'>
                             <div className="red-line"></div>
                         </Col>
                         <Col sm='8'>
-                            <h3>{section.title}</h3>
+                            <h3 className="mb-32">{section.title}</h3>
+                            <div className="inter-paragraph">{section.text}</div>
                         </Col>
                     </Row>
                 </Container>

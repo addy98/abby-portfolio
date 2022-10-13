@@ -1,15 +1,19 @@
+import React from 'react'
 import ProjectHero from '../components/ProjectHero';
 import ProjectContent from '../components/ProjectContent';
-import projects from '../data/pages.json';
+import cnet from '../data/cnet.json';
 
-function CNET() {
-  const cnet = 4;
-  return (
-    <div className="project-page">
-      <ProjectHero page={projects[cnet]} darkMode={this.props.darkMode}/>
-      <ProjectContent page={projects[cnet]}/>
-    </div>
-  );
+class CNET extends React.Component {
+
+  render() {
+    return (
+      <div className="project-page">
+        <ProjectHero page={cnet} darkMode={this.props.darkMode}/>
+        <ProjectContent page={cnet}/>
+      </div>
+    )
+  }
+
 }
 
 export default CNET;

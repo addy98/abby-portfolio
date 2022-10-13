@@ -1,16 +1,15 @@
 import React from 'react'
 import ProjectHero from '../components/ProjectHero';
 import ProjectContent from '../components/ProjectContent';
-import projects from '../data/pages.json';
+import bankrate from '../data/bankrate.json';
 
 class Bankrate extends React.Component {
 
   render() {
-    const bankrate = 2;
     return (
       <div className="project-page">
-        <ProjectHero page={projects[bankrate]} darkMode={this.props.darkMode}/>
-        <ProjectContent page={projects[bankrate]}/>
+        <ProjectHero page={bankrate} darkMode={this.props.darkMode}/>
+        <ProjectContent page={bankrate}/>
       </div>
     )
   }

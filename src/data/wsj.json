@@ -1,0 +1,21 @@
+{
+    "page": "wsj",
+    "tags": ["UI", "Product", "Pitches"],
+    "title-1": "Wall Street Journal",
+    "title-2": "Pitch",
+    "description": "Tiger team pitch work focused on acquiring a new partner within financial services.",
+    "role": "Co-designer",
+    "timeframe": "4 days",
+    "sections": [
+        {
+            "title": "BACKGROUND",
+            "text": "In an effort to gain The Wall Street Journal as a client, myself and another designer were tasked with putting together mocks for a pitch. In just 48 hours, we created a distinct brand identity and a specialized hub labeled WSJ | Concierge that hosted financial editorial. These mocks were used as a live prototype during the pitch that ultimately led to a partnership."
+        },
+        {
+            "title": "PITCH MOCKS"
+        },
+        {
+            "title": "CONCLUSION"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "page": "bankrate",
+    "tags": ["Product", "UI"],
+    "title-1": "Bankrate",
+    "title-2": "Optimizations",
+    "description": "Tooling development and expansion for auto and home insurance under Bankrate.",
+    "role": "Lead design",
+    "timeframe": "4 weeks",
+    "sections": [
+        {
+            "title": "BACKGROUND"
+        },
+        {
+            "title": "RESEARCH"
+        },
+        {
+            "title": "EXPLORATION"
+        },
+        {
+            "title": "TESTING"
+        },
+        {
+            "title": "ITERATION"
+        },
+        {
+            "title": "WHERE WE LANDED"
+        },
+        {
+            "title": "CONCLUSION"
+        }
+    ]
+}

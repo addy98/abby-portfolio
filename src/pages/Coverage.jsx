@@ -1,15 +1,19 @@
+import React from 'react'
 import ProjectHero from '../components/ProjectHero';
 import ProjectContent from '../components/ProjectContent';
-import projects from '../data/pages.json';
+import coverage from '../data/coverage.json';
 
-function Coverage() {
-  const coverage = 1;
-  return (
-    <div className="project-page">
-      <ProjectHero page={projects[coverage]} darkMode={this.props.darkMode}/>
-      <ProjectContent page={projects[coverage]}/>
-    </div>
-  );
+class Coverage extends React.Component {
+  
+  render() {
+    return (
+      <div className="project-page">
+        <ProjectHero page={coverage} darkMode={this.props.darkMode}/>
+        <ProjectContent page={coverage}/>
+      </div>
+    )
+  }
+
 }
 
 export default Coverage;

@@ -1,15 +1,19 @@
+import React from 'react'
 import ProjectHero from '../components/ProjectHero';
 import ProjectContent from '../components/ProjectContent';
-import projects from '../data/pages.json';
+import mms from '../data/mms.json';
 
-function MMS() {
-  const mms = 0;
-  return (
-    <div className="project-page">
-      <ProjectHero page={projects[mms]} darkMode={this.props.darkMode}/>
-      <ProjectContent page={projects[mms]}/>
-    </div>
-  );
+class MMS extends React.Component {
+
+  render() {
+    return (
+      <div className="project-page">
+        <ProjectHero page={mms} darkMode={this.props.darkMode}/>
+        <ProjectContent page={mms}/>
+      </div>
+    )
+  }
+
 }
 
 export default MMS;

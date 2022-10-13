@@ -1,0 +1,32 @@
+{
+    "page": "coverage",
+    "tags": ["UI", "Product", "Branding"],
+    "title-1": "Coverage",
+    "title-2": "Rebrand",
+    "description": "Full-scale rebrand of a Red Ventures aquired insurance aggregator, Coverage.",
+    "role": "Team designer",
+    "timeframe": "20 weeks",
+    "sections": [
+        {
+            "title": "BACKGROUND"
+        },
+        {
+            "title": "RESEARCH"
+        },
+        {
+            "title": "SPLIT TESTING"
+        },
+        {
+            "title": "ITERATION"
+        },
+        {
+            "title": "BUILDING THE BRAND"
+        },
+        {
+            "title": "FINAL DESIGNS"
+        },
+        {
+            "title": "CONCLUSION"
+        }
+    ]
+}
