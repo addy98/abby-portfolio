@@ -29,7 +29,7 @@ class Home extends React.Component {
         const darkMode = this.props.darkMode
         return (
             <div className='home'>
-                <div name='bg-theme-toggle' className={darkMode ? 'bg-black' : 'bg-white'}>
+                <div className={darkMode ? 'bg-black' : 'bg-white'}>
                     <div className='py-72-48'>
                         <div className='flex flex-align-center'>
                             <Container className='hero-text-position'>
@@ -39,13 +39,13 @@ class Home extends React.Component {
                                         className='flex' 
                                         id='product-header-scroll-txt'
                                         onAnimationEnd={this.retainProductPosition}>
-                                            <span className='p'></span>
-                                            <span className='r'></span>
-                                            <span className='o'></span>
-                                            <span className='d'></span>
-                                            <span className='u'></span>
-                                            <span className='c'></span>
-                                            <span className='t'></span>
+                                            <span className={darkMode ? 'p' : 'p-inverted'}></span>
+                                            <span className={darkMode ? 'r' : 'r-inverted'}></span>
+                                            <span className={darkMode ? 'o' : 'o-inverted'}></span>
+                                            <span className={darkMode ? 'd' : 'd-inverted'}></span>
+                                            <span className={darkMode ? 'u' : 'u-inverted'}></span>
+                                            <span className={darkMode ? 'c' : 'c-inverted'}></span>
+                                            <span className={darkMode ? 't' : 't-inverted'}></span>
                                         </div>
                                     </div>
                                 </Row>
@@ -65,14 +65,14 @@ class Home extends React.Component {
                                         <div className='flex flex-justify-end' 
                                         id='designer-header-scroll-txt' 
                                         onAnimationEnd={this.retainDesignerPosition}>
-                                            <span className='d'></span>
-                                            <span className='e'></span>
-                                            <span className='s'></span>
-                                            <span className='i'></span>
-                                            <span className='g'></span>
-                                            <span className='n'></span>
-                                            <span className='e'></span>
-                                            <span className='r'></span>
+                                            <span className={darkMode ? 'd' : 'd-inverted'}></span>
+                                            <span className={darkMode ? 'e' : 'e-inverted'}></span>
+                                            <span className={darkMode ? 's' : 's-inverted'}></span>
+                                            <span className={darkMode ? 'i' : 'i-inverted'}></span>
+                                            <span className={darkMode ? 'g' : 'g-inverted'}></span>
+                                            <span className={darkMode ? 'n' : 'n-inverted'}></span>
+                                            <span className={darkMode ? 'e' : 'e-inverted'}></span>
+                                            <span className={darkMode ? 'r' : 'r-inverted'}></span>
                                         </div>
                                     </div>
                                 </Row>
