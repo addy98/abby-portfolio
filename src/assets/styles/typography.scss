@@ -4,6 +4,7 @@
 
 @import url("https://use.typekit.net/bvm5ave.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 @mixin avant-garde-gothic-pro {
     font-family: 'itc-avant-garde-gothic-pro', sans-serif;
@@ -18,6 +19,11 @@
 @mixin inter-regular {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+}
+
+@mixin inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 
@@ -67,7 +73,7 @@ h5, .h5 {
     font-size: 18px;
     line-height: 27px;
     font-weight: 700;
-    @include inter-regular();
+    @include inter-bold();
 }
 
 .inter-large {
