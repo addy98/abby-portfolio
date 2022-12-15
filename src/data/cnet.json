@@ -5,5 +5,28 @@
     "title-2": "Rebrand",
     "description": "Full-scale rebrand of a Red Ventures aquired travel brand, Million Mile Secrets.",
     "role": "Intern",
-    "timeframe": "8 weeks"
+    "timeframe": "8 weeks",
+    "sections": [
+        {
+            "title": "BACKGROUND"
+        },
+        {
+            "title": "RESEARCH"
+        },
+        {
+            "title": "SPLIT TESTING"
+        },
+        {
+            "title": "ITERATION"
+        },
+        {
+            "title": "BUILDING THE BRAND"
+        },
+        {
+            "title": "FINAL DESIGNS"
+        },
+        {
+            "title": "CONCLUSION"
+        }
+    ]
 }

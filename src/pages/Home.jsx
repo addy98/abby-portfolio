@@ -17,14 +17,6 @@ class Home extends React.Component {
         document.getElementById('hero-designer-red').style.width = "20%";
     }
 
-    retainProductPosition() {
-        document.getElementById('product-header-scroll-txt').style.transform = "translateY(0)";
-    }
-
-    retainDesignerPosition() {
-        document.getElementById('designer-header-scroll-txt').style.transform = "translateY(0)";
-    }
-
     render() {
         const darkMode = this.props.darkMode
         return (
@@ -37,8 +29,7 @@ class Home extends React.Component {
                                     <div className='wrap'>
                                         <div 
                                         className='flex' 
-                                        id='product-header-scroll-txt'
-                                        onAnimationEnd={this.retainProductPosition}>
+                                        id='product-header-scroll-txt'>
                                             <span className={darkMode ? 'p' : 'p-inverted'}></span>
                                             <span className={darkMode ? 'r' : 'r-inverted'}></span>
                                             <span className={darkMode ? 'o' : 'o-inverted'}></span>
@@ -63,8 +54,7 @@ class Home extends React.Component {
                                 <Row className='hero-animation'>
                                     <div className='wrap'>
                                         <div className='flex flex-justify-end' 
-                                        id='designer-header-scroll-txt' 
-                                        onAnimationEnd={this.retainDesignerPosition}>
+                                        id='designer-header-scroll-txt'>
                                             <span className={darkMode ? 'd' : 'd-inverted'}></span>
                                             <span className={darkMode ? 'e' : 'e-inverted'}></span>
                                             <span className={darkMode ? 's' : 's-inverted'}></span>
