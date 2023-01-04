@@ -89,7 +89,7 @@ class Home extends React.Component {
                             <Col sm={{span: 6, offset: 1}}>
                                 <h2>Hi, I'm Abby</h2>
                                 <p className='inter-paragraph mt-32'>
-                                    A product designer experienced in building and optimizing finacial tools 
+                                    A product designer experienced in building and optimizing financial tools 
                                     to help people make more informed decisions with their money. 
                                     I’m passionate about simplifying digital products to create more human-focused UI. 
                                 </p>
