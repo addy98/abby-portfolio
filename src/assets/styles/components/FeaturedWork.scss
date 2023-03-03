@@ -1,0 +1,78 @@
+@use '../variables';
+
+.featured-work {
+
+    .hover-wrapper {
+        overflow: hidden;
+        border-radius: 4px;
+        transition: 0.25s;
+        &:hover {
+            box-shadow: 0px 0px 20px 5px variables.$pretty-pink;
+        }
+    }
+
+    @mixin featured-work {
+        width: 502px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+        transition: 0.25s;
+        
+    }
+
+    .feat-work-1 {
+        @include featured-work();
+        background-image: url('../../images/home/Bankrate.png');
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .feat-work-2 {
+        @include featured-work();
+        background-image: url('../../images/home/CNET.png');
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .feat-work-3 {
+        @include featured-work();
+        background-image: url('../../images/home/MMS.png');
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .feat-work-4 {
+        @include featured-work();
+        background-color: #182629;
+        color: #777777;
+        &:hover {
+            color: variables.$pretty-pink;
+            text-decoration: none;
+        }
+        padding: 24px;
+    }
+
+    .feat-work-row-1 {
+        padding: 0 8.3em 32px;
+    }
+
+    .feat-work-row-2 {
+        padding: 0 8.3em 204px;
+    }
+
+    .override-link {
+        text-decoration: none;
+    }
+
+    .lock-logo {
+        width: 48px;
+        height: 48px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../images/logos/lock.png);
+        margin-bottom: 36px;
+    }
+}

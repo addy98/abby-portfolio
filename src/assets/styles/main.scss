@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
+// Global
 @import "./helpers";
 @import "./typography";
 @import "./variables";
@@ -9,8 +10,10 @@
 @import "./components/Footer";
 @import "./components/ProjectHero";
 @import "./components/arrow-logo";
+@import "./components/Hero.scss";
 @import "./components/hero-animation";
 @import "./components/PageSection.scss";
+@import "./components/FeaturedWork.scss";
 
 //Pages
 @import "./pages/Home";

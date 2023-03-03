@@ -53,6 +53,10 @@ $breakpoints: (
     justify-content: space-between;
 }
 
+.flex-justify-around {
+    justify-content: space-around;
+}
+
 .flex-justify-start {
     justify-content: start;
 }
@@ -67,6 +71,10 @@ $breakpoints: (
 
 .flex-align-center {
     align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .my-64-32 {
@@ -115,4 +123,8 @@ $breakpoints: (
 
 .mb-12 {
     margin-bottom: 12px;
+}
+
+.p-0 {
+    padding: 0;
 }

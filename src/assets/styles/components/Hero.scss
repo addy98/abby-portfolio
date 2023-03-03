@@ -1,0 +1,194 @@
+@use '../variables';
+
+.hero {
+    // animations
+
+    @keyframes growFromRight {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 20%;
+        }
+    }
+    @keyframes growFromLeft {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 20%;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    // normal classes
+
+    @mixin red-line {
+        height: 4px;
+        width: 0;
+        background-color: variables.$pretty-pink;
+    }
+
+    .hero-product-red {
+        @include red-line();
+        animation: 1s ease 1s 1 growFromRight;
+    }
+    .hero-designer-red {
+        @include red-line();
+        animation: 1s ease 1s 1 growFromLeft;
+    }
+
+    .hero-line-position {
+        position: absolute;
+        z-index: 40;
+    }
+
+    .hero-text-position { 
+        position: relative;
+        z-index: 50;
+    }
+
+    .hero-subtitle {
+        opacity: 0;
+        animation: 1s linear 1.5s 1 fadeIn;
+    }
+
+    // hero lettering
+
+    @mixin letter {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 182px;
+        margin-right: 10px;
+    }
+
+    .c {
+        @include letter;
+        background-image: url('../../images/hero-title/c.png');
+        width: 175px;
+    }
+    .d {
+        @include letter;
+        background-image: url('../../images/hero-title/d.png');
+        width: 152px; 
+    }
+    .e {
+        @include letter;
+        background-image: url('../../images/hero-title/e.png');
+        width: 101px;
+    }
+    .g {
+        @include letter;
+        background-image: url('../../images/hero-title/g.png');
+        width: 185px;
+    }
+    .i {
+        @include letter;
+        background-image: url('../../images/hero-title/i.png');
+        width: 18px;
+    }
+    .n {
+        @include letter;
+        background-image: url('../../images/hero-title/n.png');
+        width: 145px;
+    }
+    .o {
+        @include letter;
+        background-image: url('../../images/hero-title/o.png');
+        width: 182px;
+    }
+    .p {
+        @include letter;
+        background-image: url('../../images/hero-title/p.png');
+        width: 120px;
+    }
+    .r {
+        @include letter;
+        background-image: url('../../images/hero-title/r.png');
+        width: 123px;
+    }
+    .s {
+        @include letter;
+        background-image: url('../../images/hero-title/s.png');
+        width: 106px;
+    }
+    .t {
+        @include letter;
+        background-image: url('../../images/hero-title/t.png');
+        width: 100px;
+    }
+    .u {
+        @include letter;
+        background-image: url('../../images/hero-title/u.png');
+        width: 120px; 
+    }
+    .c-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/c-inverted.png');
+        width: 175px;
+    }
+    .d-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/d-inverted.png');
+        width: 152px;
+    }
+    .e-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/e-inverted.png');
+        width: 101px;
+    }
+    .g-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/g-inverted.png');
+        width: 185px;
+    }
+    .i-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/i-inverted.png');
+        width: 18px;
+    }
+    .n-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/n-inverted.png');
+        width: 145px;
+    }
+    .o-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/o-inverted.png');
+        width: 182px;
+    }
+    .p-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/p-inverted.png');
+        width: 120px;
+    }
+    .r-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/r-inverted.png');
+        width: 123px;
+    }
+    .s-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/s-inverted.png');
+        width: 106px;
+    }
+    .t-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/t-inverted.png');
+        width: 100px;
+    }
+    .u-inverted {
+        @include letter;
+        background-image: url('../../images/hero-title/u-inverted.png');
+        width: 120px;
+    }
+}

@@ -1,93 +1,28 @@
 import React from 'react'
-import { Container, Button, Row, Col } from 'react-bootstrap'
-import ArrowLogo from '../components/ArrowLogo'
-import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap'
+import Hero from '../components/home/Hero'
+import FeaturedWork from '../components/home/FeaturedWork'
+import Sprite from '../components/svg/svg-sprite'
 
 class Home extends React.Component {
-
-    retainOpacity() {
-        document.getElementById('hero-subtitle').style.opacity = 1;
-    }
-
-    retainProductLineWidth() {
-        document.getElementById('hero-product-red').style.width = "20%";
-    }
-
-    retainDesignerLineWidth() {
-        document.getElementById('hero-designer-red').style.width = "20%";
-    }
 
     render() {
         const darkMode = this.props.darkMode
         return (
             <div className='home'>
-                <div className={darkMode ? 'bg-black' : 'bg-white'}>
-                    <div className='py-72-48'>
-                        <div className='flex flex-align-center'>
-                            <Container className='hero-text-position'>
-                                <Row className='hero-animation mb-32'>
-                                    <div className='wrap'>
-                                        <div 
-                                        className='flex' 
-                                        id='product-header-scroll-txt'>
-                                            <span className={darkMode ? 'p' : 'p-inverted'}></span>
-                                            <span className={darkMode ? 'r' : 'r-inverted'}></span>
-                                            <span className={darkMode ? 'o' : 'o-inverted'}></span>
-                                            <span className={darkMode ? 'd' : 'd-inverted'}></span>
-                                            <span className={darkMode ? 'u' : 'u-inverted'}></span>
-                                            <span className={darkMode ? 'c' : 'c-inverted'}></span>
-                                            <span className={darkMode ? 't' : 't-inverted'}></span>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </Container>
-                            <Container fluid className='hero-line-position m-0'>
-                                <div className='flex flex-justify-end'>
-                                    <div id='hero-product-red' 
-                                    className='hero-product-red'
-                                    onAnimationEnd={this.retainProductLineWidth}></div>
-                                </div>
-                            </Container>
-                        </div>
-                        <div className='flex flex-align-center'>
-                            <Container className='hero-text-position'>
-                                <Row className='hero-animation'>
-                                    <div className='wrap'>
-                                        <div className='flex flex-justify-end' 
-                                        id='designer-header-scroll-txt'>
-                                            <span className={darkMode ? 'd' : 'd-inverted'}></span>
-                                            <span className={darkMode ? 'e' : 'e-inverted'}></span>
-                                            <span className={darkMode ? 's' : 's-inverted'}></span>
-                                            <span className={darkMode ? 'i' : 'i-inverted'}></span>
-                                            <span className={darkMode ? 'g' : 'g-inverted'}></span>
-                                            <span className={darkMode ? 'n' : 'n-inverted'}></span>
-                                            <span className={darkMode ? 'e' : 'e-inverted'}></span>
-                                            <span className={darkMode ? 'r' : 'r-inverted'}></span>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </Container>
-                            <Container fluid className='hero-line-position m-0'>
-                                <div id='hero-designer-red' 
-                                className='hero-designer-red' 
-                                onAnimationEnd={this.retainDesignerLineWidth}></div>
-                            </Container>
-                        </div>
-                    </div>
+                <div className={darkMode ? 'bg-black text-white' : 'bg-white text-black'}>
+                    <Hero darkMode={darkMode} />
                     <Container>
-                        <h3 
-                        id='hero-subtitle'
-                        className={'hero-subtitle ' + (darkMode ? 'text-white' : 'text-black')}
-                        onAnimationEnd={this.retainOpacity}
-                        >
-                            Transforming the tools people use everyday, for the better.
-                        </h3>
-                        <div className='flex flex-justify-center home-first-arrow'>
-                            <ArrowLogo />
-                        </div>
-                        <Row className={darkMode ? 'text-white' : 'text-black'}>
+                        <Row>
                             <Col sm={{span: 6, offset: 1}}>
-                                <h2>Hi, I'm Abby</h2>
+                                <Row>
+                                    <Col sm='auto'>
+                                        <h2>Hi, I'm Abby</h2>
+                                    </Col>
+                                    <Col sm='2'>
+                                        <div className='red-line'></div>
+                                    </Col>
+                                </Row>
                                 <p className='inter-paragraph mt-32'>
                                     A product designer experienced in building and optimizing financial tools 
                                     to help people make more informed decisions with their money. 
@@ -103,11 +38,11 @@ class Home extends React.Component {
                                     </div>
                                     <div className='flex mt-28'>
                                         <div className='star-li'></div>
-                                        <li>My second passion is architecture and infrastructure design.</li>
+                                        <li>I love to run and plan to race in the NYC Marathon this year.</li>
                                     </div>
                                     <div className='flex mt-28'>
                                         <div className='star-li'></div>
-                                        <li>One more interesting thing about me</li>
+                                        <li>My nerdy leisure pursuit is studying architecture and infrastructure.</li>
                                     </div>
                                 </ul>
                             </Col>
@@ -118,32 +53,24 @@ class Home extends React.Component {
                                 </div>
                             </Col>
                         </Row>
-                        <div className='flex flex-justify-center home-second-arrow'>
-                            <ArrowLogo />
-                        </div>
-                        <Row className={darkMode ? 'text-white' : 'text-black'}>
-                            <Col sm={{offset: 1}}>
+                        <Row>
+                            <Col className='flex flex-justify-center'>
+                                <div className='eyebrow-text px-115-50'>GREAT WORK WITH GREAT BRANDS</div>
+                            </Col>
+                        </Row>
+                        <Sprite darkMode={darkMode}/>
+                    </Container>
+                    <Container fluid className="pl-0">
+                        <Row className="px-140-48">
+                            <Col sm='2'>
+                                <div className="red-line"></div>
+                            </Col>
+                            <Col>
                                 <h2>Featured work</h2>
                             </Col>
                         </Row>
-                        <Row className='mt-32'>
-                            <Col sm={{offset: 1}}>
-                                <Link to="/mms"><Button>mms</Button></Link>
-                            </Col>
-                            <Col>
-                                <Link to="/coverage"><Button>coverage</Button></Link>
-                            </Col>
-                            <Col>
-                                <Link to="/bankrate"><Button>bankrate</Button></Link>
-                            </Col>
-                            <Col>
-                                <Link to="/wsj"><Button>wsj</Button></Link>
-                            </Col>
-                            <Col>
-                                <Link to="/cnet"><Button>cnet</Button></Link>
-                            </Col>
-                        </Row>
                     </Container>
+                    <FeaturedWork />
                 </div>
             </div>
         )
