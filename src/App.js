@@ -8,7 +8,7 @@ import Bankrate from './pages/Bankrate'
 import WSJ from './pages/WSJ'
 import CNET from './pages/CNET'
 import { Route, Routes } from 'react-router-dom'
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/app/ScrollToTop'
 
 class App extends React.Component {
 

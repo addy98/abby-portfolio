@@ -101,6 +101,12 @@ h5, .h5 {
     @include inter-regular();
 }
 
+.inline-number-font {
+    font-size: 18px;
+    line-height: 21.6px;
+    @include avant-garde-gothic-pro(); 
+}
+
 .heels {
     background-color: variables.$blue;
 }

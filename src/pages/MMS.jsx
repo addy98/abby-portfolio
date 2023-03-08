@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectHero from '../components/ProjectHero';
-import ProjectContent from '../components/ProjectContent';
+import ProjectHero from '../components/pages/ProjectHero';
+import ProjectContent from '../components/pages/ProjectContent';
 import mms from '../data/mms.json';
 
 class MMS extends React.Component {

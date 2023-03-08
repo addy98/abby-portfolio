@@ -1,6 +1,6 @@
 import { Row, Col, Container } from 'react-bootstrap'
 import React from 'react'
-import ArrowLogo from './ArrowLogo'
+import ArrowLogo from '../widgets/ArrowLogo'
 
 class ProjectHero extends React.Component {
 

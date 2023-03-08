@@ -1,0 +1,12 @@
+@use '../variables.scss';
+
+.inline-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 12px;
+    padding-left: 11px;
+    padding-top: 6px;
+    color: white;
+    background-color: variables.$pretty-pink;
+}

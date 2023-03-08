@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import ArrowLogo from '../../components/ArrowLogo'
+import ArrowLogo from '../../components/widgets/ArrowLogo'
 
 class Hero extends React.Component {
 
@@ -19,8 +19,8 @@ class Hero extends React.Component {
     render() {
         const darkMode = this.props.darkMode
         return(
-            <div>
-                <div className='hero py-72-48'>
+            <div className='hero'>
+                <div className='py-72-48'>
                     <div className='flex flex-align-center'>
                         <Container className='hero-text-position'>
                             <Row className='hero-animation mb-32'>

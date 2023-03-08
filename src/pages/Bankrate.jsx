@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectHero from '../components/ProjectHero';
-import ProjectContent from '../components/ProjectContent';
+import ProjectHero from '../components/pages/ProjectHero';
+import ProjectContent from '../components/pages/ProjectContent';
 import bankrate from '../data/bankrate.json';
 
 class Bankrate extends React.Component {
