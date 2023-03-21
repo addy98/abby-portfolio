@@ -70,7 +70,7 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <FeaturedWork />
+                    <FeaturedWork darkMode={darkMode}/>
                 </div>
             </div>
         )

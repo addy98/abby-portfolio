@@ -9,7 +9,7 @@ class Coverage extends React.Component {
     return (
       <div className="project-page">
         <ProjectHero page={coverage} darkMode={this.props.darkMode}/>
-        <ProjectContent page={coverage}/>
+        <ProjectContent page={coverage} darkMode={this.props.darkMode}/>
       </div>
     )
   }

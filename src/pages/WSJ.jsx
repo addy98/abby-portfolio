@@ -9,7 +9,7 @@ class WSJ extends React.Component {
     return (
       <div className="project-page">
         <ProjectHero page={wsj} darkMode={this.props.darkMode}/>
-        <ProjectContent page={wsj}/>
+        <ProjectContent page={wsj} darkMode={this.props.darkMode}/>
       </div>
     )
   }

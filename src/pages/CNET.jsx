@@ -9,7 +9,7 @@ class CNET extends React.Component {
     return (
       <div className="project-page">
         <ProjectHero page={cnet} darkMode={this.props.darkMode}/>
-        <ProjectContent page={cnet}/>
+        <ProjectContent page={cnet} darkMode={this.props.darkMode}/>
       </div>
     )
   }

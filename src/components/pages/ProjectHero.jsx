@@ -9,7 +9,7 @@ class ProjectHero extends React.Component {
         const darkMode = this.props.darkMode
         return (
             <div className='project-hero'>
-                <div name='bg-theme-toggle' className={'py-48-154 '+(darkMode ? 'bg-black' : 'bg-white')}>
+                <div className={'py-48-154 '+(darkMode ? 'bg-black' : 'bg-white')}>
                     <Container>
                         <Row>
                             <Col sm={4} className='copy'>

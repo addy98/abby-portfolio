@@ -7,7 +7,7 @@ class Footer extends React.Component {
         const darkMode = this.props.darkMode
         return (
             <div className='footer'>
-                <footer className={'py-44-48 ' + (darkMode ? 'bg-black' : 'bg-white')}>
+                <footer className={'py-44-48 ' + (darkMode ? 'bg-black' : 'bg-off-white')}>
                     <Container>
                         <Row>
                             <Col sm={{span: 10, offset: 1}}>

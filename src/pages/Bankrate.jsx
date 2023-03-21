@@ -9,7 +9,7 @@ class Bankrate extends React.Component {
     return (
       <div className="project-page">
         <ProjectHero page={bankrate} darkMode={this.props.darkMode}/>
-        <ProjectContent page={bankrate}/>
+        <ProjectContent page={bankrate} darkMode={this.props.darkMode}/>
       </div>
     )
   }

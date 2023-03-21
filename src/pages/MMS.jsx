@@ -9,7 +9,7 @@ class MMS extends React.Component {
     return (
       <div className="project-page">
         <ProjectHero page={mms} darkMode={this.props.darkMode}/>
-        <ProjectContent page={mms}/>
+        <ProjectContent page={mms} darkMode={this.props.darkMode}/>
       </div>
     )
   }

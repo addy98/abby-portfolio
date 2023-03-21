@@ -24,29 +24,53 @@
 
     .feat-work-1 {
         @include featured-work();
-        background-image: url('../../images/home/Bankrate.png');
+        background-image: url('../../images/thumbnails/Bankrate.png');
+        transform: scale(1.3);
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.4);
         }
     }
+
     .feat-work-2 {
         @include featured-work();
-        background-image: url('../../images/home/CNET.png');
+        background-image: url('../../images/thumbnails/CNET.png');
+        transform: scale(1.2);
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.3);
         }
     }
+    .feat-work-2-inverted {
+        @include featured-work();
+        background-image: url('../../images/thumbnails/CNET-inverted.png');
+        transform: scale(1.2);
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
     .feat-work-3 {
         @include featured-work();
-        background-image: url('../../images/home/MMS.png');
+        background-image: url('../../images/thumbnails/MMS.png');
+        transform: scale(1.1);
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.175);
         }
     }
+
     .feat-work-4 {
         @include featured-work();
         background-color: #182629;
-        color: #777777;
+        color: variables.$grey;
+        &:hover {
+            color: variables.$pretty-pink;
+            text-decoration: none;
+        }
+        padding: 24px;
+    }
+    .feat-work-4-inverted {
+        @include featured-work();
+        background-color: variables.$off-white;
+        color: variables.$grey;
         &:hover {
             color: variables.$pretty-pink;
             text-decoration: none;
@@ -73,6 +97,16 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(../../images/logos/lock.png);
+        margin-bottom: 36px;
+    }
+
+    .lock-logo-inverted {
+        width: 48px;
+        height: 48px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../images/logos/lock-inverted.png);
         margin-bottom: 36px;
     }
 }
