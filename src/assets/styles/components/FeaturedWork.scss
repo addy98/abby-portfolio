@@ -6,8 +6,25 @@
         overflow: hidden;
         border-radius: 4px;
         transition: 0.25s;
+        h4 {
+            background-color: variables.$pretty-pink;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            z-index: 100;
+            transition: 0.25s;
+            opacity: 0;
+            top: 24px;
+            left: 32px;
+            padding: 5px 3px;
+            width: fit-content;
+            height: 35px;
+        }
         &:hover {
             box-shadow: 0px 0px 20px 5px variables.$pretty-pink;
+            h4 {
+                opacity: 1;
+            }
         }
     }
 
@@ -19,7 +36,7 @@
         background-size: contain;
         padding: 0;
         transition: 0.25s;
-        
+        margin-top: -35px;
     }
 
     .feat-work-1 {
@@ -66,6 +83,8 @@
             text-decoration: none;
         }
         padding: 24px;
+        margin-top: 0;
+        height: 408px;
     }
     .feat-work-4-inverted {
         @include featured-work();
@@ -76,6 +95,8 @@
             text-decoration: none;
         }
         padding: 24px;
+        margin-top: 0;
+        height: 408px;
     }
 
     .feat-work-row-1 {

@@ -10,20 +10,23 @@ class FeaturedWork extends React.Component {
             <div className='featured-work'>
                 <Container>
                     <div className='flex flex-justify-around feat-work-row-1'>
-                        <Link to="/bankrate">
+                        <Link to="/bankrate" className='override-link'>
                             <div className='hover-wrapper'>
+                                <h4>BANKRATE TOOLING</h4>
                                 <div className='feat-work-1'></div>
                             </div>
                         </Link>
-                        <Link to="/cnet">
+                        <Link to="/cnet" className='override-link'>
                             <div className='hover-wrapper'>
+                                <h4>CNET OPTIMIZATIONS</h4>
                                 <div className={darkMode ? 'feat-work-2' : 'feat-work-2-inverted'}></div>
                             </div>
                         </Link>
                     </div>
                     <div className='flex flex-justify-around feat-work-row-2'>
-                        <Link to="/mms">
+                        <Link to="/mms" className='override-link'>
                             <div className='hover-wrapper'>
+                                <h4>TRAVEL REBRAND</h4>
                                 <div className='feat-work-3'></div>
                             </div>
                         </Link>
