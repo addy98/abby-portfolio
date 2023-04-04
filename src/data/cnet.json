@@ -6,6 +6,20 @@
     "description": "Full-scale rebrand of a Red Ventures aquired travel brand, Million Mile Secrets.",
     "role": "Intern",
     "timeframe": "8 weeks",
+    "takeaways": [
+        {
+            "title": "Learn from our brands",
+            "content": "Rather than reinventing the wheel, implement winning strategies seen on our legacy Finserv brands."
+        },
+        {
+            "title": "Diversify templates",
+            "content": "One size does not fit all. We would need new templates targeting users in different points of the funnel."
+        },
+        {
+            "title": "Builds tools in-house",
+            "content": "Instead of relying on widgets from an outside team, we needed to build our own customizable tools. "
+        }
+    ],
     "sections": [
         {
             "title": "BACKGROUND"

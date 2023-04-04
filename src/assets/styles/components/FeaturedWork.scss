@@ -44,24 +44,24 @@
         background-image: url('../../images/thumbnails/Bankrate.png');
         transform: scale(1.3);
         &:hover {
-            transform: scale(1.4);
+            transform: scale(1.375);
         }
     }
 
     .feat-work-2 {
         @include featured-work();
         background-image: url('../../images/thumbnails/CNET.png');
-        transform: scale(1.2);
+        transform: scale(1.3);
         &:hover {
-            transform: scale(1.3);
+            transform: scale(1.375);
         }
     }
     .feat-work-2-inverted {
         @include featured-work();
         background-image: url('../../images/thumbnails/CNET-inverted.png');
-        transform: scale(1.2);
+        transform: scale(1.3);
         &:hover {
-            transform: scale(1.3);
+            transform: scale(1.375);
         }
     }
 

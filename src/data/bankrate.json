@@ -4,34 +4,60 @@
     "title-1": "Bankrate",
     "title-2": "Optimizations",
     "description": "Tooling development and expansion for auto and home insurance under Bankrate.",
-    "role": "Lead design",
+    "role": "Co-designer",
     "timeframe": "4 weeks",
+    "takeaways": [
+        {
+            "title": "Capitalize on opportunity",
+            "content": "There wasn't one single robust, accurate calculator in the space. There was an opportunity to be the first."
+        },
+        {
+            "title": "Leverage data",
+            "content": "Integrations with national data banks gives an advantage to provide an accurate estimate utilizing less intrusive questions."
+        },
+        {
+            "title": "Create multiple tools",
+            "content": "No competitor had multiple calculators on their site. There was an opportunity to create a hub for financial tools."
+        }
+    ],
     "sections": [
         {
-            "title": "BACKGROUND"
+            "title": "BACKGROUND",
+            "text": "Bankrate was consistently falling to the second page of the SERP for important keywords that drive traffic to our insurance pages. In an effort to gain SoV, our team was tasked with ramping up our tooling. My team and I introduced new interactive tools that focused on pushing down funnel users into our buy flow. These net-new tools include premium calculators, coverage level calculators, user-selected pages structures, and more. If successful, impressions and SoV would increase for notable revenue gains."
         },
         {
             "number": "1",
-            "title": "RESEARCH"
+            "title": "RESEARCH",
+            "subtitle": "What are our competitors getting right? Getting wrong?",
+            "text": "Before creating new tools, a competitive analysis was conducted to better understand what tools already existed and where the opportunity lays. Surveying the six biggest competitors in the space, there were three main takeaways pivotal for next steps."
         },
         {
             "number": "2",
-            "title": "EXPLORATION"
+            "title": "EXPLORATION",
+            "subtitle": "Wireframes and feedback.",
+            "text": "Initial wires largely explored the optimal experience for presenting both questions and a solution in-content. Through iteration and group collaboration, the experience was whittled down to a side-by-side experience that then drove users into our buy flow."
         },
         {
             "number": "3",
-            "title": "TESTING"
+            "title": "TESTING",
+            "subtitle": "Not every design is a winner.",
+            "text": "With a split A/B test against the legacy entry point, two things became very apparent. 1) More users were interacting with this tool and using it to enter our buy flow, and 2) these same users were less likely to complete the flow. While interaction was positive, there were greater losses to revenue from drop-off."
         },
         {
             "number": "4",
-            "title": "ITERATION"
+            "title": "ITERATION",
+            "subtitle": "Learning from the losses.",
+            "text": "Going back to the drawing board, our team re-evaluated the intent of users on each URL the calculator lived on. We concluded that there isn’t a one-size-fits-all tooling solution for all users coming to Bankrate. Instead, offering users multiple tools per page would optimize the benefit we are providing while pushing users into the funnel through multiple touchpoints."
         },
         {
             "number": "5",
-            "title": "WHERE WE LANDED"
+            "title": "WHERE WE ARE NOW",
+            "subtitle": "Launching several new tools.",
+            "text": "Within 3 months, the team created 5 new tools that would educate users on how to find the best price and company for their auto insurance needs. These ranged from calculators, to compare tools, to rate tables–each with the capability to be paired with other tools within a single page."
         },
         {
-            "title": "CONCLUSION"
+            "title": "CONCLUSION",
+            "text": "Despite the most challenging year in over two decades with rising rates and low investment from carriers, Bankrate insurance finished the year up. The team was able to make up revenue losses from diminished carrier bidding by utilizing keywords pointed at our new tools. Rolling out these new features also helped us gain SoV against competitors by building authority in our products and trust in our expertise. Today, we continue to optimize these products to ensure we are providing the most accurate and helpful tools to our consumers."
         }
     ]
 }

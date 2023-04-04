@@ -9,7 +9,7 @@ class ProjectContent extends React.Component {
             <div className="project-content">
                 <div className={'my-120-130 '+(darkMode ? 'bg-black text-white' : 'bg-white text-black')}>
                     <PageSection section={page.sections[0]} />
-                    <PageSection section={page.sections[1]} />
+                    <PageSection section={page.sections[1]} page={page} darkMode={darkMode}/>
                     <PageSection section={page.sections[2]} />
                     {page.sections[3] !== undefined &&
                         <PageSection section={page.sections[3]} />
