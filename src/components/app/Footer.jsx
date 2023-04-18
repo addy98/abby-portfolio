@@ -16,7 +16,7 @@ class Footer extends React.Component {
                                     <a href='https://www.linkedin.com/in/abby-moulton/' target='_blank' rel="noreferrer" >
                                         <div className='flex'>
                                             <div className={'inter-paragraph ' + (darkMode ? 'text-white' : 'text-black')}>Let's connect </div>
-                                            <div id='linkedin-logo' className='linkedin-logo'></div>
+                                            <div id='linkedin-logo' className={darkMode ? 'linkedin-logo' : 'linkedin-logo-inverted'}></div>
                                         </div>
                                     </a>
                                 </div>

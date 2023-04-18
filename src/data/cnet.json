@@ -1,10 +1,10 @@
 {
     "page": "cnet",
-    "tags": ["UI", "Branding", "Internship"],
-    "title-1": "Travel",
-    "title-2": "Rebrand",
-    "description": "Full-scale rebrand of a Red Ventures aquired travel brand, Million Mile Secrets.",
-    "role": "Intern",
+    "tags": ["UI", "Product"],
+    "title-1": "CNET",
+    "title-2": "Optimizations",
+    "description": "Financial service experts brought in to quickly optimize a struggling brand.",
+    "role": "Co-designer",
     "timeframe": "8 weeks",
     "takeaways": [
         {
@@ -22,26 +22,35 @@
     ],
     "sections": [
         {
-            "title": "BACKGROUND"
+            "title": "BACKGROUND",
+            "text": "The technology-focused review site, CNET, was acquired in 2020 by Red Ventures and merged into our Media and Commerce vertical. Towards the middle of 2022, the Money division of CNET was carved out of M&C and brought into the Financial Services vertical. My team and I were tasked with mending CNET Money to become more transactional and timely while keeping the transition seamless within the brand."
         },
         {
             "number": "1",
-            "title": "RESEARCH"
+            "title": "CO-CREATION",
+            "subtitle": "Defining the end goal.",
+            "text": "Pulling in all stakeholders, our creative team led a co-creation session to brainstorm areas of opportunity for CNET Money. Utilizing FigJam, each functional group laid out the needs, wants, and good-to-haves for the three transactional templates we focused on. From there, we recognized common threads that would help drive the creative solutions to come."
         },
         {
             "number": "2",
-            "title": "SPLIT TESTING"
+            "title": "BUILDING BLOCKS",
+            "text": "With the unique opportunity to optimize a product with an established brand identity, we broke down existing templates to better adapt them to our new goals. Starting small, we analyzed structural components like grids, containers, and content layouts, then worked up to reusable components like navigation, bylines, and list elements. We assembled a new library that fit within the CNET brand but better suited our highly transactional content needs."
         },
         {
             "number": "3",
-            "title": "ITERATION"
+            "title": "ASSEMBLY",
+            "subtitle": "Putting the pieces together.",
+            "text": "Over the course of 8 weeks, our team reassembled nearly every template with our updated components. Rather than work on one template at a time before going live, we built everything out on the creative side while the dev team shifted to a new tech stack. This gave our team a more holistic look into how these components would behave and interact with each other in each new template before going live."
         },
         {
             "number": "4",
-            "title": "BUILDING THE BRAND"
+            "title": "LAUNCH",
+            "subtitle": "Introducing the new CNET Money.",
+            "text": "With every template completed and thoroughly QA'd, the redesigned CNET Money hub was launched in Q1 of 2023. These new templates utilize better SEO tactics, organize transactional elements more efficiently, and play up CNETs underutilized secondary brand colors and elements."
         },
         {
-            "title": "CONCLUSION"
+            "title": "CONCLUSION",
+            "text": "CNET Money underwent a massive overhaul, not just visually. New editorial content strategy better targeted users keyword searches. SEO best practices reorganized site structures to optimize Google’s analyses. The product team refocused to areas with the greatest opportunity given macro trends. With all these changes intertwined with the visual work our team completed, we saw massive wins for CNET Money post-launch."
         }
     ]
 }

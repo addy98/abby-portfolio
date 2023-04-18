@@ -18,7 +18,7 @@
     
     .mms {
         @include image-styles();
-        background-image: url('../../images/heroes/laptop-2.jpg');
+        background-image: url('../../images/heroes/mms.png');
     }
     .coverage {
         @include image-styles();
@@ -26,15 +26,15 @@
     }
     .bankrate {
         @include image-styles();
-        background-image: url('../../images/heroes/laptop-2.jpg');
+        background-image: url('../../images/heroes/bankrate.png');
     }
     .wsj {
         @include image-styles();
-        background-image: url('../../images/heroes/laptop-2.jpg');
+        background-image: url('../../images/heroes/wsj.png');
     }
     .cnet {
         @include image-styles();
-        background-image: url('../../images/heroes/laptop-2.jpg');
+        background-image: url('../../images/heroes/cnet.png');
     }
     
 }
