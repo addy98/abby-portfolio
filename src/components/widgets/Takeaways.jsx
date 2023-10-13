@@ -1,4 +1,4 @@
-function Takeaways(props) {
+export default function Takeaways(props) {
     const darkMode = props.darkMode
     const page = props.page
     return (
@@ -36,4 +36,3 @@ function Takeaways(props) {
         </div>
     )
 }
-export default Takeaways

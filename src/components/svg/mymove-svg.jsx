@@ -1,4 +1,4 @@
-function MyMoveSVG(props) {
+export default function MyMoveSVG(props) {
     return(
         <svg width="201" height="41" viewBox="0 0 201 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1059_2554)">
@@ -20,5 +20,3 @@ function MyMoveSVG(props) {
         </svg>
     )
 }
-
-export default MyMoveSVG
