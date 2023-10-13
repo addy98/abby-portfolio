@@ -1,7 +1,9 @@
 import { Container, Navbar, Nav } from 'react-bootstrap'
+import { useContext } from 'react'
+import { ThemeContext } from '../../ThemeContext'
 
-export default function Navigation(props) {
-    const darkMode = props.darkMode
+export default function Navigation({ onClick }) {
+    const darkMode = useContext(ThemeContext)
     return (
         <div className='navigation'>
             <Navbar id='navbar' className={'bar ' + (darkMode ? 'bg-black' : 'bg-white')}>
@@ -15,7 +17,7 @@ export default function Navigation(props) {
                     <Nav>
                         <Nav.Item className='flex'>
                             <div className={'h5 ' + (darkMode ? 'text-white' : 'text-black')}>Dark mode</div>
-                            <div className={darkMode ? 'dark-mode' : 'dark-mode-off'} onClick={() => props.onClick()}></div>
+                            <div className={darkMode ? 'dark-mode' : 'dark-mode-off'} onClick={() => onClick()}></div>
                         </Nav.Item>
                     </Nav>
                 </Container>

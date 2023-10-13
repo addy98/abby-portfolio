@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import ArrowLogo from '../../components/widgets/ArrowLogo'
+import { useContext } from 'react'
+import { ThemeContext } from '../../ThemeContext'
 
-export default function Hero(props) {
-    const darkMode = props.darkMode
+export default function Hero() {
+    const darkMode = useContext(ThemeContext)
     return(
         <div className='hero'>
             <div className='py-72-48'>

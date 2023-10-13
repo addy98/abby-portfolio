@@ -1,8 +1,10 @@
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { ThemeContext } from '../../ThemeContext'
 
-export default function FeaturedWork(props) {
-    const darkMode = props.darkMode
+export default function FeaturedWork() {
+    const darkMode = useContext(ThemeContext)
     return(
         <div className='featured-work'>
             <Container>

@@ -1,7 +1,9 @@
 import { Row, Col, Container } from 'react-bootstrap'
+import { useContext } from 'react'
+import { ThemeContext } from '../../ThemeContext'
 
-export default function Footer(props) {
-    const darkMode = props.darkMode
+export default function Footer() {
+    const darkMode = useContext(ThemeContext)
     return (
         <div className='footer'>
             <footer className={'py-44-48 ' + (darkMode ? 'bg-black' : 'bg-off-white')}>

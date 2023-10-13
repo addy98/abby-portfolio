@@ -3,9 +3,11 @@ import CNETSVG from './cnet-svg'
 import BankrateSVG from './bankrate-svg'
 import CoverageSVG from './coverage-svg'
 import MyMoveSVG from './mymove-svg'
+import { useContext } from 'react'
+import { ThemeContext } from '../../ThemeContext'
 
-export default function Sprite(props) {
-    const darkMode = props.darkMode
+export default function Sprite() {
+    const darkMode = useContext(ThemeContext)
     return(
 
         <div className='svg-gutter'>
