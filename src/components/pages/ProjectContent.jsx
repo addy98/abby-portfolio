@@ -1,9 +1,7 @@
 import PageSection from "./PageSection";
 import { ThemeContext } from "../../ThemeContext";
 
-export default function ProjectContent(props) {
-    const page = props.page
-    const darkMode = props.darkMode
+export default function ProjectContent({ darkMode, page }) {
     return (
         <div className="project-content">
             <div className={'my-120-130 '+(darkMode ? 'bg-black text-white' : 'bg-white text-black')} darkMode={darkMode}>

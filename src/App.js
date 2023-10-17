@@ -18,14 +18,16 @@ export default function App() {
       <ThemeContext.Provider value={darkMode}>
         <Navigation onClick={() => setDarkMode(!darkMode)}/>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="mms" element={<MMS />} />
-          <Route path="coverage" element={<Coverage />} />
-          <Route path="bankrate" element={<Bankrate />} />
-          <Route path="wsj" element={<WSJ />} />
-          <Route path="cnet" element={<CNET />} />
-        </Routes>
+        <ThemeContext.Provider value={darkMode}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="mms" element={<MMS />} />
+            <Route path="coverage" element={<Coverage />} />
+            <Route path="bankrate" element={<Bankrate />} />
+            <Route path="wsj" element={<WSJ />} />
+            <Route path="cnet" element={<CNET />} />
+          </Routes>
+        </ThemeContext.Provider>
         <Footer />
       </ThemeContext.Provider>
     </div>

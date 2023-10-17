@@ -1,9 +1,7 @@
 import { Row, Col, Container } from 'react-bootstrap'
 import ArrowLogo from '../widgets/ArrowLogo'
 
-export default function ProjectHero(props) {
-    const page = props.page
-    const darkMode = props.darkMode
+export default function ProjectHero({ darkMode, page }) {
     return (
         <div className='project-hero'>
             <div className={'py-48-154 '+(darkMode ? 'bg-black' : 'bg-white')}>
