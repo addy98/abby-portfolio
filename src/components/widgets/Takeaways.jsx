@@ -1,6 +1,8 @@
-function Takeaways(props) {
-    const darkMode = props.darkMode
-    const page = props.page
+import { useContext } from "react"
+import { ThemeContext } from "../../ThemeContext"
+
+export default function Takeaways({ page }) {
+    const darkMode = useContext(ThemeContext)
     return (
         <div className="takeaways">
             <h4>TAKEAWAYS</h4>
@@ -36,4 +38,3 @@ function Takeaways(props) {
         </div>
     )
 }
-export default Takeaways

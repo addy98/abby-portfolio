@@ -1,17 +1,17 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Hero from '../components/home/Hero'
 import FeaturedWork from '../components/home/FeaturedWork'
 import Sprite from '../components/svg/svg-sprite'
+import { useContext } from 'react'
+import { ThemeContext } from '../ThemeContext'
 
-class Home extends React.Component {
-
-    render() {
-        const darkMode = this.props.darkMode
-        return (
-            <div className='home'>
-                <div className={darkMode ? 'bg-black text-white' : 'bg-white text-black'}>
-                    <Hero darkMode={darkMode} />
+export default function Home() {
+    const darkMode = useContext(ThemeContext)
+    return (
+        <div className='home'>
+            <div className={darkMode ? 'bg-black text-white' : 'bg-white text-black'}>
+                <ThemeContext.Provider value={darkMode}>
+                    <Hero />
                     <Container>
                         <Row>
                             <Col sm={{span: 6, offset: 1}}>
@@ -58,7 +58,7 @@ class Home extends React.Component {
                                 <div className='eyebrow-text px-115-50'>GREAT WORK WITH GREAT BRANDS</div>
                             </Col>
                         </Row>
-                        <Sprite darkMode={darkMode}/>
+                        <Sprite />
                     </Container>
                     <Container fluid className="pl-0">
                         <Row className="px-140-48">
@@ -70,11 +70,9 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <FeaturedWork darkMode={darkMode}/>
-                </div>
+                    <FeaturedWork />
+                </ThemeContext.Provider>
             </div>
-        )
-    }
+        </div>
+    )
 }
-
-export default Home

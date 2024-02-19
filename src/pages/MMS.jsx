@@ -1,19 +1,15 @@
-import React from 'react'
 import ProjectHero from '../components/pages/ProjectHero';
 import ProjectContent from '../components/pages/ProjectContent';
 import mms from '../data/mms.json';
+import { useContext } from 'react';
+import { ThemeContext } from '../ThemeContext';
 
-class MMS extends React.Component {
-
-  render() {
-    return (
-      <div className="project-page">
-        <ProjectHero page={mms} darkMode={this.props.darkMode}/>
-        <ProjectContent page={mms} darkMode={this.props.darkMode}/>
-      </div>
-    )
-  }
-
+export default function MMS() {
+  const darkMode = useContext(ThemeContext)
+  return (
+    <div className="project-page">
+      <ProjectHero page={mms} darkMode={darkMode}/>
+      <ProjectContent page={mms} darkMode={darkMode}/>
+    </div>
+  )
 }
-
-export default MMS;

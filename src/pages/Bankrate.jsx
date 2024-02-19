@@ -1,19 +1,15 @@
-import React from 'react'
 import ProjectHero from '../components/pages/ProjectHero';
 import ProjectContent from '../components/pages/ProjectContent';
 import bankrate from '../data/bankrate.json';
+import { useContext } from 'react';
+import { ThemeContext } from '../ThemeContext';
 
-class Bankrate extends React.Component {
-
-  render() {
-    return (
-      <div className="project-page">
-        <ProjectHero page={bankrate} darkMode={this.props.darkMode}/>
-        <ProjectContent page={bankrate} darkMode={this.props.darkMode}/>
-      </div>
-    )
-  }
-
+export default function Bankrate() {
+  const darkMode = useContext(ThemeContext)
+  return (
+    <div className="project-page">
+      <ProjectHero page={bankrate} darkMode={darkMode}/>
+      <ProjectContent page={bankrate} darkMode={darkMode}/>
+    </div>
+  )
 }
-
-export default Bankrate;

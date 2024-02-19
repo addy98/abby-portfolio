@@ -1,14 +1,14 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import InlineNumber from "../widgets/InlineNumber";
 import Takeaways from "../widgets/Takeaways";
+import { useContext } from "react";
+import { ThemeContext } from "../../ThemeContext";
 
-class PageSection extends React.Component {
-    render() {
-        const section = this.props.section
-        const darkMode = this.props.darkMode
-        return (
-            <div className="page-section my-20">
+export default function PageSection({ section, page }) {
+    const darkMode = useContext(ThemeContext)
+    return (
+        <div className="page-section my-20">
+            <ThemeContext.Provider value={darkMode}>
                 <Container fluid className="pl-0">
                     <Row className="flex">
                         <Col sm='2'>
@@ -27,15 +27,14 @@ class PageSection extends React.Component {
                     </Row>
                     <Row>
                         <Col sm={{span: 9, offset: 2}}>
-                            {this.props.page !== undefined && this.props.page.takeaways !== undefined && 
-                                <Takeaways darkMode={darkMode} page={this.props.page} />
+                            {page !== undefined && page.takeaways !== undefined && 
+                                <Takeaways page={page} />
                             }
                         </Col>
                     </Row>
                 </Container>
-            </div>
-        )
-    }
+            </ThemeContext.Provider>
+            
+        </div>
+    )
 }
-
-export default PageSection

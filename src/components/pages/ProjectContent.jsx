@@ -1,15 +1,13 @@
-import React from "react";
 import PageSection from "./PageSection";
+import { ThemeContext } from "../../ThemeContext";
 
-class ProjectContent extends React.Component {
-    render() {
-        const page = this.props.page
-        const darkMode = this.props.darkMode
-        return (
-            <div className="project-content">
-                <div className={'my-120-130 '+(darkMode ? 'bg-black text-white' : 'bg-white text-black')}>
+export default function ProjectContent({ darkMode, page }) {
+    return (
+        <div className="project-content">
+            <div className={'my-120-130 '+(darkMode ? 'bg-black text-white' : 'bg-white text-black')} darkMode={darkMode}>
+                <ThemeContext.Provider value={darkMode}>
                     <PageSection section={page.sections[0]} />
-                    <PageSection section={page.sections[1]} page={page} darkMode={darkMode}/>
+                    <PageSection section={page.sections[1]} page={page}/>
                     <PageSection section={page.sections[2]} />
                     {page.sections[3] !== undefined &&
                         <PageSection section={page.sections[3]} />
@@ -23,11 +21,9 @@ class ProjectContent extends React.Component {
                     {page.sections[6] !== undefined &&
                         <PageSection section={page.sections[6]} />
                     }
-                </div>
+                </ThemeContext.Provider>
             </div>
-            
-        )
-    }
+        </div>
+        
+    )
 }
-
-export default ProjectContent

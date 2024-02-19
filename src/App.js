@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { createContext, useState } from 'react';
+=======
+import { useState } from 'react';
+>>>>>>> 0d22b1de1e57beb7034549f1699e4d6f8264e0e4
 import Navigation from './components/app/Navigation'
 import Home from './pages/Home'
 import Footer from './components/app/Footer'
@@ -9,7 +13,9 @@ import WSJ from './pages/WSJ'
 import CNET from './pages/CNET'
 import { Route, Routes } from 'react-router-dom'
 import ScrollToTop from './components/app/ScrollToTop'
+import { ThemeContext } from './ThemeContext';
 
+<<<<<<< HEAD
 export const ThemeContext = createContext(null)
 
 function App() {
@@ -74,3 +80,27 @@ function App() {
 // }
 
 export default App;
+=======
+export default function App() {
+  const [darkMode, setDarkMode] = useState(true)
+  return (
+    <div className={"App "+ (darkMode ? 'bg-black' : 'bg-white')}>
+      <ThemeContext.Provider value={darkMode}>
+        <Navigation onClick={() => setDarkMode(!darkMode)}/>
+        <ScrollToTop />
+        <ThemeContext.Provider value={darkMode}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="mms" element={<MMS />} />
+            <Route path="coverage" element={<Coverage />} />
+            <Route path="bankrate" element={<Bankrate />} />
+            <Route path="wsj" element={<WSJ />} />
+            <Route path="cnet" element={<CNET />} />
+          </Routes>
+        </ThemeContext.Provider>
+        <Footer />
+      </ThemeContext.Provider>
+    </div>
+  )
+}
+>>>>>>> 0d22b1de1e57beb7034549f1699e4d6f8264e0e4
