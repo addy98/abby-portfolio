@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import { useState } from 'react';
 import Navigation from './components/app/Navigation'
 import Home from './pages/Home'
 import Footer from './components/app/Footer'
@@ -10,7 +10,6 @@ import CNET from './pages/CNET'
 import { Route, Routes } from 'react-router-dom'
 import ScrollToTop from './components/app/ScrollToTop'
 import { ThemeContext } from './ThemeContext';
-export const ThemeContext = createContext(null)
 
 function App() {
 
@@ -23,11 +22,11 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home darkMode={darkMode}/>} />
-          {/* <Route path="mms" element={<MMS darkMode={this.state.darkMode}/>} />
-          <Route path="coverage" element={<Coverage darkMode={this.state.darkMode}/>} />
-          <Route path="bankrate" element={<Bankrate darkMode={this.state.darkMode}/>} />
-          <Route path="wsj" element={<WSJ darkMode={this.state.darkMode}/>} />
-          <Route path="cnet" element={<CNET darkMode={this.state.darkMode}/>} /> */}
+          <Route path="mms" element={<MMS darkMode={darkMode}/>} />
+          <Route path="coverage" element={<Coverage darkMode={darkMode}/>} />
+          <Route path="bankrate" element={<Bankrate darkMode={darkMode}/>} />
+          <Route path="wsj" element={<WSJ darkMode={darkMode}/>} />
+          <Route path="cnet" element={<CNET darkMode={darkMode}/>} />
         </Routes>
         <Footer darkMode={darkMode}/>
       </div>
@@ -35,65 +34,5 @@ function App() {
     
   )
 }
-// class App extends React.Component {
-
-//     constructor(props) {
-//         super(props)
-//         this.state = {
-//             darkMode: true,
-//             home: true
-//         }
-//     }
-
-//     toggleDarkMode() {
-//         if (this.state.darkMode === true) {
-//             this.setState({darkMode: false})
-//         } else {
-//             this.setState({darkMode: true})
-//         }
-//     }
-
-//     render() {
-//       return (
-//         <div className={"App "+ (this.state.darkMode ? 'bg-black' : 'bg-white')}>
-//           <Navigation darkMode={this.state.darkMode} onClick={() => this.toggleDarkMode()}/>
-//           <ScrollToTop />
-//           <Routes>
-//             <Route path="/" element={<Home darkMode={this.state.darkMode}/>} />
-//             <Route path="mms" element={<MMS darkMode={this.state.darkMode}/>} />
-//             <Route path="coverage" element={<Coverage darkMode={this.state.darkMode}/>} />
-//             <Route path="bankrate" element={<Bankrate darkMode={this.state.darkMode}/>} />
-//             <Route path="wsj" element={<WSJ darkMode={this.state.darkMode}/>} />
-//             <Route path="cnet" element={<CNET darkMode={this.state.darkMode}/>} />
-//           </Routes>
-//           <Footer darkMode={this.state.darkMode}/>
-//         </div>
-//       )
-//     }
-
-// }
 
 export default App;
-
-// export default function App() {
-//   const [darkMode, setDarkMode] = useState(true)
-//   return (
-//     <div className={"App "+ (darkMode ? 'bg-black' : 'bg-white')}>
-//       <ThemeContext.Provider value={darkMode}>
-//         <Navigation onClick={() => setDarkMode(!darkMode)}/>
-//         <ScrollToTop />
-//         <ThemeContext.Provider value={darkMode}>
-//           <Routes>
-//             <Route path="/" element={<Home />} />
-//             <Route path="mms" element={<MMS />} />
-//             <Route path="coverage" element={<Coverage />} />
-//             <Route path="bankrate" element={<Bankrate />} />
-//             <Route path="wsj" element={<WSJ />} />
-//             <Route path="cnet" element={<CNET />} />
-//           </Routes>
-//         </ThemeContext.Provider>
-//         <Footer />
-//       </ThemeContext.Provider>
-//     </div>
-//   )
-// }
